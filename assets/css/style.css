@@ -87,8 +87,18 @@ header nav ul li a:hover {
     color: #A9C236;
 }
 
-header nav ol {
+header nav ul.lang li a.active {
+    border-bottom: 2px solid #A9C236;
+    color: #A9C236;
+}
+
+header nav details.collapse {
     display: none;
+}
+
+header nav details.collapse div.dropdown-menu {
+    display: flex;
+    flex-direction: column;
 }
 
 .dropdown-menu {
@@ -98,6 +108,7 @@ header nav ol {
     background: rgba(40, 40, 40, .8);
     padding: .8rem;
     display: none;
+    border-radius: 2px;
 }
 
 .dropdown-menu a {
@@ -110,10 +121,6 @@ header nav ol {
 .dropdown-menu a:hover {
     background-color: #A9C236;
     border-radius: 5px;
-}
-
-.dropdown:hover .dropdown-menu {
-    display: block;
 }
 
 
@@ -1195,8 +1202,18 @@ footer div.copy a:hover {
 }
 
 @media screen and (min-width: 750px) and (max-width: 949px) {
-    header nav ul li a {
-        font-size: 65%;
+    header nav ul {
+        display: none;
+    }
+
+    header nav ul.lang {
+        display: flex;
+        gap: .5rem;
+        padding-right: 3rem;
+    }
+
+    header nav details.collapse {
+        display: block;
     }
 
     section#banner div.content p {
@@ -1296,7 +1313,13 @@ footer div.copy a:hover {
         display: none;
     }
 
-    header nav ol {
+    header nav ul.lang {
+        display: flex;
+        gap: .5rem;
+        padding-right: 3rem;
+    }
+
+    header nav details.collapse {
         display: block;
     }
 
