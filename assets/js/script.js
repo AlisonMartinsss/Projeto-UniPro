@@ -57,3 +57,44 @@ for (i = 0; i < coll.length; i++) {
   });
 }
 
+$(function() {
+  $(".br").click(function() {
+      //header
+      $("header nav ul li a").eq(0).text("Inicial");
+      $("header nav ul li a").eq(1).text('A "Empresa"');
+      $("header nav ul li a").eq(2).text("Serviços");
+      $("header nav ul li a").eq(3).text("Localização");
+      $("header nav ul li a").eq(4).text("Contato");
+      $(".en").removeClass("active");
+      $(".es").removeClass("active");
+      $(".br").addClass("active");
+  });
+});
+
+$(function() {
+  $(".en").click(function() {
+      //header
+      $("header nav ul li a").eq(0).text("Initial");
+      $("header nav ul li a").eq(1).text('The "Company"');
+      $("header nav ul li a").eq(2).text("Services");
+      $("header nav ul li a").eq(3).text("Localization");
+      $("header nav ul li a").eq(4).text("Contact");
+      $(".br").removeClass("active");
+      $(".es").removeClass("active");
+      $(".en").addClass("active");
+  });
+});
+
+$(function() {
+  $(".es").click(function() {
+      //header
+      $("header nav ul li a").eq(0).text("Inicial");
+      $("header nav ul li a").eq(1).text('La "Empresa"');
+      $("header nav ul li a").eq(2).text("Servicios");
+      $("header nav ul li a").eq(3).text("Ubicación");
+      $("header nav ul li a").eq(4).text("Contacto");
+      $(".br").removeClass("active");
+      $(".en").removeClass("active");
+      $(".es").addClass("active");
+  });
+});
