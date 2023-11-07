@@ -1589,6 +1589,10 @@ footer div.copy a:hover {
         font-size: 85%;
     }
 
+    section#contact div.content div#qrcode {
+    width: 100%;
+}
+
     section#contact div.content form input,
     section#contact div.content form textarea,
     footer div.footer form span input {
