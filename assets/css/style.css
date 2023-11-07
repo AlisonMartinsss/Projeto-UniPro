@@ -1,0 +1,1662 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    color: #282828;
+    font-family: 'Montserrat', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+div.whatsapp-fixed {
+    position: fixed;
+    z-index: 9999;
+    bottom: 0px;
+    right: 0;
+    padding: 1%;
+}
+
+div.whatsapp-fixed img {
+    width: 55px;
+    height: 55px;
+}
+
+div.top-fixed {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    bottom: 70px;
+    right: 0;
+    padding: 1%;
+}
+
+div.top-fixed img {
+    width: 55px;
+    height: 55px;
+    border-radius: 10%;
+}
+
+#back-to-top {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+}
+
+/* HEADER */
+
+header {
+    padding: 3% 10%;
+    height: 13vh;
+}
+
+header nav {
+    display: flex;
+    height: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+header nav img {
+    width: 30%;
+}
+
+header nav ul {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+}
+
+header nav ul li a {
+    font-size: 100%;
+    font-weight: 500;
+    letter-spacing: .0125rem;
+    text-transform: uppercase;
+    transition: ease-in-out .1s;
+}
+
+header nav ul li a:hover {
+    border-bottom: 2px solid #A9C236;
+    color: #A9C236;
+}
+
+header nav ol {
+    display: none;
+}
+
+.dropdown-menu {
+    position: absolute;
+    right: 10px;
+    z-index: 9999;
+    background: rgba(40, 40, 40, .8);
+    padding: .8rem;
+    display: none;
+}
+
+.dropdown-menu a {
+    display: block;
+    color: #FFF;
+    padding: .5rem;
+    font-size: 70%;
+}
+
+.dropdown-menu a:hover {
+    background-color: #A9C236;
+    border-radius: 5px;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+
+
+/* BANNER */
+
+section#banner {
+    height: 87vh;
+    padding: 3% 10%;
+    position: relative;
+}
+
+section#banner div.circle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../img/banner.png);
+    background-position: center;
+    clip-path: polygon(73% 0, 100% 0%, 100% 100%, 45% 100%);
+}
+
+section#banner div.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    width: 50%;
+    height: 100%;
+}
+
+section#banner div.content h5 {
+    font-size: 250%;
+    font-weight: 700;
+    letter-spacing: .0125rem;
+    text-transform: uppercase;
+    text-align: center;
+    cursor: default;
+}
+
+section#banner div.content h5 span {
+    border-bottom: 3px solid #A9C236;
+}
+
+section#banner div.content p {
+    font-size: 100%;
+    font-weight: 400;
+    letter-spacing: .0125rem;
+    text-transform: uppercase;
+    text-align: justify;
+    padding-bottom: 1rem;
+    cursor: default;
+}
+
+section#banner div.content div.buttons {
+    display: flex;
+    gap: 1rem;
+}
+
+section#banner div.content a {
+    border: none;
+    border-radius: 15px;
+    background: #A9C236;
+    padding: .75rem;
+    font-weight: 500;
+    letter-spacing: .0125rem;
+    text-transform: uppercase;
+    transition: ease-in-out .2s;
+}
+
+section#banner div.content a:hover {
+    background-color: #282828;
+    color: #A9C236;
+}
+
+/* ABOUT */
+
+section#about {
+    background-color: #A9C236;
+    display: flex;
+    flex-direction: column;
+    padding: 3% 10%;
+    gap: 4rem;
+    min-height: 70vh;
+}
+
+section#about div.title {
+    display: flex;
+    padding: 1rem;
+}
+
+section#about div.title h5 {
+    font-size: 250%;
+    font-weight: 700;
+    letter-spacing: .0125rem;
+    text-transform: uppercase;
+    text-align: center;
+    cursor: default;
+}
+
+section#about div.title h5 span {
+    border-bottom: 2px solid #FFF;
+}
+
+section#about div.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+section#about div.content div.card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    gap: .5rem;
+}
+
+section#about div.content div.title h5 {
+    font-size: 130%;
+    font-weight: 600;
+    letter-spacing: .0125rem;
+    text-transform: uppercase;
+    cursor: default;
+    text-align: center;
+}
+
+section#about div.content div.card-content p {
+    font-size: 95%;
+    font-weight: 400;
+    letter-spacing: .0125rem;
+    text-transform: uppercase;
+    cursor: default;
+    text-align: justify;
+}
+
+/* SERVICES */
+
+section#services {
+    background-color: #FFF;
+    display: flex;
+    flex-direction: column;
+    padding: 3% 10%;
+    gap: 3rem;
+}
+
+section#services div.title {
+    padding: 1rem;
+    display: flex;
+}
+
+section#services div.title h5 {
+    font-size: 250%;
+    font-weight: 700;
+    letter-spacing: .0125rem;
+    text-transform: uppercase;
+    cursor: default;
+}
+
+section#services div.title h5 span {
+    border-bottom: 2px solid #A9C236;
+}
+
+section#services div.content {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+section#services div.content details.collapse {
+  border: 1px solid #ebebeb;
+  border-radius: 4px;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.25);
+  width: 100%;
+}
+
+section#services div.content details.collapse summary.title {
+  cursor: pointer;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 1rem;
+}
+
+section#services div.content details.collapse div.description {
+  border-top: 1px solid #ebebeb;
+  padding: 1rem;
+}
+
+section#services div.fullfilment {
+    display: flex;
+    flex-direction: column;
+}
+
+section#services div.fullfilment div.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section#services div.fullfilment div.header h5 {
+    font-size: 130%;
+    font-weight: 500;
+    letter-spacing: .0125rem;
+    text-transform: uppercase;
+    cursor: default;
+    text-align: center;
+    padding-top: 3rem;
+}
+
+section#services div.fullfilment div.header h6 {
+    font-size: 150%;
+    font-weight: 700;
+    letter-spacing: .0125rem;
+    text-transform: uppercase;
+    text-align: center;
+    cursor: default;
+}
+
+section#services div.fullfilment div.header img {
+    width: 70%;
+}
+
+section#services div.fullfilment div.container-small {
+    display: flex;
+    flex-direction: column;
+    padding-top: 7rem;
+    gap: 2rem;
+}
+
+section#services div.fullfilment div.container-small h5 {
+    font-size: 130%;
+    font-weight: 600;
+    letter-spacing: .0125rem;
+    text-transform: uppercase;
+    cursor: default;
+    text-align: center;
+    color: #A9C236;
+}
+
+section#services div.fullfilment div.container-small div.infos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+section#services div.fullfilment div.container-small div.infos div.box-infos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    width: 35%;
+}
+
+section#services div.fullfilment div.container-small div.infos div.box-infos p {
+    font-size: 95%;
+    font-weight: 400;
+    letter-spacing: .0125rem;
+    text-transform: uppercase;
+    cursor: default;
+    text-align: justify;
+}
+
+section#services div.fullfilment div.container-small div.infos div.box-infos img {
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.45);
+}
+
+section#services div.fullfilment div.container-differentials {
+    display: flex;
+    flex-direction: column;
+    padding-top: 7rem;
+}
+
+section#services div.fullfilment div.container-differentials h5 {
+    font-size: 130%;
+    font-weight: 600;
+    letter-spacing: .0125rem;
+    text-transform: uppercase;
+    cursor: default;
+    text-align: center;
+    color: #A9C236;
+}
+
+section#services div.fullfilment div.container-differentials div.differentials {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+section#services div.fullfilment div.container-differentials div.differentials div.box-differentials {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    width: 30%;
+    height: 350px;
+    gap: 1rem;
+}
+
+section#services div.fullfilment div.container-differentials div.differentials div.box-differentials img {
+    width: 30%;
+}
+
+section#services div.fullfilment div.container-differentials div.differentials div.box-differentials h5 {
+    font-size: 110%;
+    font-weight: 500;
+    letter-spacing: .0125rem;
+    text-transform: uppercase;
+    cursor: default;
+    text-align: center;
+    color: #A9C236;
+}
+
+section#services div.fullfilment div.container-differentials div.differentials div.box-differentials p {
+    font-size: 90%;
+    font-weight: 300;
+    letter-spacing: .0125rem;
+    text-transform: uppercase;
+    cursor: default;
+    text-align: center;
+}
+
+section#services div.operador-logistico {
+    display: flex;
+    flex-direction: column;
+}
+
+section#services div.operador-logistico div.structure {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+section#services div.operador-logistico div.structure h5 {
+    font-size: 130%;
+    font-weight: 600;
+    letter-spacing: .0125rem;
+    text-transform: uppercase;
+    cursor: default;
+    text-align: center;
+    color: #A9C236;
+}
+
+section#services div.operador-logistico div.structure p {
+    font-size: 95%;
+    font-weight: 400;
+    letter-spacing: .0125rem;
+    text-transform: uppercase;
+    cursor: default;
+    text-align: center;
+}
+
+section#services div.operador-logistico div.structure ul {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+section#services div.operador-logistico div.structure ul li span {
+    font-size: 85%;
+    font-weight: 400;
+    letter-spacing: .0125rem;
+    text-transform: uppercase;
+    cursor: default;
+}
+
+section#services div.operador-logistico div.structure div.images {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+section#services div.operador-logistico div.structure div.images img {
+    width: 49%;
+    border-radius: 5px;
+}
+
+section#services div.operador-logistico div.services {
+    display: flex;
+    flex-direction: column;
+    padding-top: 7rem;
+}
+
+section#services div.operador-logistico div.services h5 {
+    font-size: 130%;
+    font-weight: 600;
+    letter-spacing: .0125rem;
+    text-transform: uppercase;
+    cursor: default;
+    text-align: center;
+    color: #A9C236;
+}
+
+section#services div.operador-logistico div.services div.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+section#services div.operador-logistico div.services div.container div.box {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    width: 33.3%;
+    height: 350px;
+    gap: 1rem;
+}
+
+section#services div.operador-logistico div.services div.container div.box img {
+    width: 30%;
+}
+
+section#services div.operador-logistico div.services div.container div.box div.box-text {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    width: 75%;
+
+}
+
+section#services div.operador-logistico div.services div.container div.box h5 {
+    font-size: 110%;
+    font-weight: 500;
+    letter-spacing: .0125rem;
+    text-transform: uppercase;
+    cursor: default;
+    text-align: center;
+    color: #A9C236;
+}
+
+section#services div.operador-logistico div.services div.container div.box p {
+    font-size: 90%;
+    font-weight: 300;
+    letter-spacing: .0125rem;
+    text-transform: uppercase;
+    cursor: default;
+    text-align: center;
+}
+
+section#services div.transportes {
+    display: flex;
+    flex-direction: column;
+}
+
+section#services div.transportes div.fleet {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+section#services div.transportes div.fleet h5 {
+    font-size: 130%;
+    font-weight: 600;
+    letter-spacing: .0125rem;
+    text-transform: uppercase;
+    cursor: default;
+    text-align: center;
+    color: #A9C236;
+}
+
+section#services div.transportes div.fleet ul {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: center;
+    padding: 1rem 0;
+}
+
+section#services div.transportes div.fleet ul li span {
+    font-size: 85%;
+    font-weight: 400;
+    letter-spacing: .0125rem;
+    text-transform: uppercase;
+    cursor: default;
+}
+
+section#services div.transportes div.services {
+    display: flex;
+    flex-direction: column;
+    padding-top: 7rem;
+}
+
+section#services div.transportes div.services h5 {
+    font-size: 130%;
+    font-weight: 600;
+    letter-spacing: .0125rem;
+    text-transform: uppercase;
+    cursor: default;
+    text-align: center;
+    color: #A9C236;
+}
+
+section#services div.transportes div.services div.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+section#services div.transportes div.services div.container div.box {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    width: 33.3%;
+    height: 350px;
+    gap: 1rem;
+}
+
+section#services div.transportes div.services div.container div.box img {
+    width: 30%;
+}
+
+section#services div.transportes div.services div.container div.box div.box-text {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    width: 75%;
+}
+
+section#services div.transportes div.services div.container div.box h5 {
+    font-size: 110%;
+    font-weight: 500;
+    letter-spacing: .0125rem;
+    text-transform: uppercase;
+    cursor: default;
+    text-align: center;
+    color: #A9C236;
+}
+
+section#services div.transportes div.services div.container div.box p {
+    font-size: 90%;
+    font-weight: 300;
+    letter-spacing: .0125rem;
+    text-transform: uppercase;
+    cursor: default;
+    text-align: center;
+}
+
+/* LOCALIZATION */
+
+section#localization {
+    min-height: 100vh;
+    padding: 3% 10%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #282828;
+}
+
+section#localization div.title {
+    display: flex;
+    padding: 1rem;
+}
+
+section#localization div.title h5 {
+    font-size: 250%;
+    font-weight: 700;
+    letter-spacing: .0125rem;
+    text-transform: uppercase;
+    text-align: center;
+    color: #FFF;
+    cursor: default;
+}
+
+section#localization div.storages {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 1rem;
+    height: 550px;
+}
+
+section#localization div.storages div.storage-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+    background-color: #FFF;
+    border-radius: 10px;
+    padding: 1rem;
+    width: 25%;
+    height: 100%;
+    color: #282828;
+}
+
+section#localization div.storages div.storage-box img {
+    width: 100%;
+}
+
+section#localization div.storages div.storage-box iframe {
+    width: 100%;
+    height: 70%;
+    border: none;
+    border-radius: 10px;
+}
+
+section#localization div.storages div.storage-box h5 {
+    font-size: 90%;
+    letter-spacing: .125rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-align: center;
+    cursor: default;
+}
+
+section#localization div.storages div.storage-box p {
+    font-size: 80%;
+    letter-spacing: .125rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+    cursor: default;
+}
+
+section#localization div.storages div.storage-box a {
+    font-size: 70%;
+    letter-spacing: .125rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    border: none;
+    outline: none;
+    background-color: #282828;
+    color: #FFF;
+    border-radius: 10px;
+    padding: .5rem;
+    transition: ease-in-out .1s;
+}
+
+section#localization div.storages div.storage-box a:hover {
+    background-color: #101010;
+}
+
+section#localization div.infos {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 0;
+    gap: 3rem;
+}
+
+section#localization div.infos h5 {
+    font-size: 200%;
+    font-weight: 700;
+    letter-spacing: .0125rem;
+    text-transform: uppercase;
+    text-align: center;
+    color: #FFF;
+    cursor: default;
+}
+
+section#localization div.infos h5 span,
+section#localization div.title h5 span {
+    color: #FFF;
+    border-bottom: 1px solid #A9C236;
+}
+
+section#localization div.infos ul {
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+}
+
+section#localization div.infos ul li {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: .3rem;    
+}
+
+section#localization div.infos ul li span {
+    font-size: 70%;
+    letter-spacing: .125rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #FFF;
+    cursor: default;
+}
+
+/* CONTACT */
+
+section#contact {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    padding: 3% 10%;
+    background-color: #A9C236;
+}
+
+section#contact div.title {
+    display: flex;
+    padding: 1rem;
+}
+
+section#contact div.title h5 {
+    font-size: 250%;
+    font-weight: 700;
+    letter-spacing: .0125rem;
+    text-transform: uppercase;
+    text-align: center;
+    cursor: default;
+}
+
+section#contact div.title h5 span {
+    border-bottom: 2px solid #FFF;
+}
+
+section#contact div.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 5%;
+}
+
+section#contact div.infos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    gap: 2rem;
+    cursor: default;
+}
+
+section#contact div.infos h5 {
+    font-size: 150%;
+    font-weight: 600;
+    letter-spacing: .0125rem;
+    text-transform: uppercase;
+    text-align: center;
+    cursor: default;
+}
+
+section#contact div.infos a {
+    font-size: 100%;
+    font-weight: 400;
+    letter-spacing: .0125rem;
+    text-transform: uppercase;
+    text-align: justify;
+    padding-bottom: 1rem;
+}
+
+section#contact div.infos ul.contacts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section#contact div.infos ul.social-media {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+section#contact div.infos ul.social-media li:hover {
+    opacity: .8;
+}
+
+section#contact div.infos ul.social-media i {
+    font-size: 250%;
+}
+
+section#contact div.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+section#contact div.buttons {
+    display: flex;
+    flex-direction: row;
+    width: 75%;
+}
+
+section#contact div.buttons button {
+    border: none;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background: #282828;
+    color: #A9C236;
+    padding: .5rem;
+    cursor: pointer;
+    font-weight: 400;
+    letter-spacing: .0125rem;
+    text-transform: uppercase;
+    transition: ease-in-out .2s;
+    width: 50%;
+    padding: 1rem 0;
+}
+
+section#contact div.buttons button:hover {
+    background-color: #101010;
+}
+
+section#contact div.buttons button.active {
+    background: #BDD553;
+    color: #282828;
+}
+
+section#contact div.content form {
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    gap: 1rem;
+    background-color: #BDD553;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    padding: 2rem;
+}
+
+section#contact div.content form div.inputs {
+    position: relative;
+    padding-top: .5rem;
+}
+
+section#contact div.content form input,
+section#contact div.content form textarea {
+    border: solid 1.5px #282828;
+    border-radius: 15px;
+    background: none;
+    padding: .5rem;
+    color: #282828;
+    outline: none;
+    width: 100%;
+}
+
+section#contact div.content form textarea {
+    resize: vertical;
+}
+
+section#contact div.content form label {
+    position: absolute;
+    left: 10px;
+    pointer-events: none;
+    transform: translateY(-50%) scale(0.8);
+    background-color: #BDD553;
+    padding: 0 .2em;
+    color: #282828;
+}
+
+section#contact div.content form button {
+    border: none;
+    border-radius: 15px;
+    background: #282828;
+    color: #A9C236;
+    padding: .5rem;
+    cursor: pointer;
+    font-weight: 400;
+    letter-spacing: .0125rem;
+    text-transform: uppercase;
+    transition: ease-in-out .2s;
+}
+
+section#contact div.content form button:hover {
+    background-color: #101010;
+}
+
+section#contact div.content div#qrcode {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #BDD553;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    width: 75%;
+    padding: 2rem 0;
+}
+
+section#contact div.content div#qrcode div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+section#contact div.content div#qrcode h5 {
+    font-size: 90%;
+    font-weight: 400;
+    letter-spacing: .0125rem;
+    text-transform: uppercase;
+    cursor: default;
+    text-align: center;
+    line-height: 1.3rem;
+}
+
+section#contact div.content div#qrcode img {
+    width: 50%;
+}
+
+section#contact div.content div#qrcode a {
+    padding: .2rem .1rem;
+    text-decoration: underline;
+}
+
+section#contact div.content div#qrcode a:hover {
+    color: #A9C236;
+    background: rgba(0,0,0,0.75);
+    border-radius: 5px;
+}
+
+/* FOOTER */
+
+footer {
+    display: flex;
+    flex-direction: column;
+}
+
+footer div.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+    padding: 3% 10%;
+}
+
+footer div.footer h5 {
+    font-size: 100%;
+    font-weight: 500;
+    letter-spacing: .0125rem;
+    text-transform: uppercase;
+    padding-bottom: 1rem;
+    cursor: default;
+}
+
+footer div.footer a {
+    font-size: 90%;
+    font-weight: 400;
+    letter-spacing: .0125rem;
+    text-transform: uppercase;
+    transition: ease-in-out .1s;
+}
+
+footer div.footer a:hover,
+footer div.footer a:hover i {
+    color: #A9C236;
+}
+
+footer div.footer .horario {
+    cursor: default;
+}
+
+footer div.footer ul.social-media {
+    display: flex;
+    gap: .5rem;
+}
+
+footer div.footer i {
+    color: #282828;
+    font-size: 3rem;
+}
+
+footer div.footer form {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+footer div.footer form span {
+    position: relative;
+    padding-top: .5rem;
+}
+
+footer div.footer form span input {
+    border: solid 1.5px #282828;
+    border-radius: 15px;
+    background: none;
+    padding: .5rem;
+    color: #282828;
+    outline: none;
+    width: 100%;
+}
+
+footer div.footer form span label {
+    position: absolute;
+    left: 10px;
+    pointer-events: none;
+    transform: translateY(-50%) scale(0.8);
+    background-color: #FFF;
+    padding: 0 .2em;
+    color: #282828;
+}
+
+footer div.footer form button {
+    border: none;
+    border-radius: 15px;
+    background: #A9C236;
+    padding: .5rem;
+    cursor: pointer;
+    font-weight: 400;
+    letter-spacing: .0125rem;
+    text-transform: uppercase;
+    transition: ease-in-out .2s;
+}
+
+footer div.footer form button:hover {
+    background-color: #282828;
+    color: #A9C236;
+}
+
+footer div.copy {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: .3% 10%;
+    background-color: #000;
+    width: 100%;
+    cursor: default;
+}
+
+footer div.copy div.info-sanco {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: #FFF;
+}
+
+footer div.copy a {
+    color: #FFF;
+    font-size: 85%;
+    font-weight: 300;
+    letter-spacing: .0125rem;
+    text-transform: uppercase;
+    transition: ease-in-out .1s;
+}
+
+footer div.copy a:hover {
+    color: #A9C236;
+}
+
+@media screen and (min-width: 950px) and (max-width: 1700px) {
+    header nav ul li a,
+    section#banner div.content p {
+        font-size: 90%;
+    }
+
+    section#banner div.content h5 {
+        font-size: 180%;
+    }
+
+    section#banner div.content a {
+        border: none;
+        border-radius: 15px;
+        background: #A9C236;
+        padding: .75rem;
+        font-weight: 500;
+        letter-spacing: .0125rem;
+        text-transform: uppercase;
+        transition: ease-in-out .2s;
+    }
+}
+
+@media screen and (min-width: 750px) and (max-width: 949px) {
+    header nav ul li a {
+        font-size: 65%;
+    }
+
+    section#banner div.content p {
+        font-size: 95%;
+    }
+
+    section#banner div.content h5 {
+        font-size: 110%;
+    }
+
+    section#banner div.content h5 span {
+        border-bottom: 2px solid #A9C236;
+    }
+
+    section#banner div.content div.buttons {
+        flex-direction: column;
+    }
+
+    section#banner div.content a {
+        font-size: 90%;
+        padding: .65rem;
+        font-weight: 400;
+        letter-spacing: .015rem;
+        text-align: center;
+    }
+
+    section#localization div.storages {
+        flex-wrap: wrap;
+        height: 100%;
+    }
+
+    section#localization div.storages div.storage-box {
+        width: 45%;
+    }
+
+    section#contact div.container {
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        gap: 5rem;
+    }
+
+    section#contact div.infos {
+        width: 100%;
+    }
+
+    section#contact div.content {
+        width: 100%;
+    }
+
+    footer div.footer {
+        flex-wrap: wrap;
+    }
+
+    footer div.footer div {
+        width: 50%;
+        margin-top: 2rem;
+    }
+
+    footer div.footer h5 {
+        font-size: 90%;
+        font-weight: 500;
+        letter-spacing: .0125rem;
+        text-transform: uppercase;
+        padding-bottom: 1rem;
+        cursor: default;
+    }
+    
+    footer div.footer a {
+        font-size: 80%;
+        font-weight: 400;
+        letter-spacing: .0125rem;
+        text-transform: uppercase;
+        transition: ease-in-out .1s;
+    }
+
+    footer div.footer i {
+        color: #282828;
+        font-size: 2rem;
+    }
+
+    footer div.copy {
+        justify-content: center;
+    }
+
+    footer div.copy div:nth-child(2) {
+        display: none;
+    }
+
+    footer div.copy a {
+        font-size: 57%;
+    }
+}
+
+@media screen and (max-width: 749px) {
+    header nav ul {
+        display: none;
+    }
+
+    header nav ol {
+        display: block;
+    }
+
+    header,
+    section#banner,
+    section#about,
+    section#services,
+    section#localization, 
+    section#contact, 
+    footer div.footer {
+        padding: 1% 5%;
+    }
+
+    header nav img {
+        width: 25%;
+    }
+
+    section#banner div.circle {
+        display: none;
+    }
+
+    section#banner div.content {
+        width: 100%;
+    }
+
+    section#banner div.content h5 {
+        font-size: 100%;
+    }
+
+    section#banner div.content h5 span {
+        border-bottom: 1.5px solid #A9C236;
+    }
+
+    section#banner div.content p {
+        font-size: 60%;
+    }
+
+    section#banner div.content div.buttons {
+        flex-direction: column;
+    }
+
+    section#banner div.content a {
+        font-size: 70%;
+        border-radius: 10px;
+        padding: .5rem;
+        font-weight: 400;
+        letter-spacing: .015rem;
+        text-align: center;
+    }
+
+    section#about {
+        gap: 1rem;
+    }
+
+    section#about div.title {
+        padding: .6rem;
+    }
+
+    section#about div.title h5 {
+        font-size: 120%;
+    }
+
+    section#about div.content {
+        gap: .8rem;
+        padding-bottom: .6rem;
+    }
+
+    section#about div.content div.title h5 {
+        font-size: 100%;
+    }
+
+    section#about div.content div.card-content p {
+        font-size: 65%;
+    }
+
+    section#services {
+        gap: 1rem;
+    }
+
+    section#services div.title h5 {
+        font-size: 120%;
+    }
+
+    section#services div.content details.collapse summary.title {
+        font-size: 80%;
+    }
+
+    section#services div.title,
+    section#services div.content {
+        padding: .6rem;
+    }
+
+    section#services div.fullfilment div.header img {
+        display: none;
+    }
+
+    section#services div.fullfilment div.header h5 {
+        font-size: 110%;
+    }
+
+    section#services div.fullfilment div.header h6 {
+        font-size: 105%;
+    }
+
+    section#services div.fullfilment div.container-small h5,
+    section#services div.fullfilment div.container-differentials h5 {
+        font-size: 100%;
+    }
+
+    section#services div.fullfilment div.container-small div.infos {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    section#services div.fullfilment div.container-small div.infos div.box-infos {
+        width: 100%;
+    }
+
+    section#services div.fullfilment div.container-small,
+    section#services div.operador-logistico div.services,
+    section#services div.transportes div.services {
+        padding-top: 2rem;
+    }
+
+    section#services div.fullfilment div.container-differentials {
+        padding-top: 2.5rem;
+    }
+
+    section#services div.fullfilment div.container-small div.infos div.box-infos p {
+        font-size: 65%;
+    }
+
+    section#services div.fullfilment div.container-differentials div.differentials {
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+    
+    section#services div.fullfilment div.container-differentials div.differentials div.box-differentials {
+        width: 100%;
+        height: 150px;
+    }
+
+    section#services div.fullfilment div.container-differentials div.differentials div.box-differentials h5 {
+        font-size: 80%;
+    }
+    
+    section#services div.fullfilment div.container-differentials div.differentials div.box-differentials p {
+        font-size: 65%;
+    }
+
+    section#services div.operador-logistico div.structure h5,
+    section#services div.operador-logistico div.services h5,
+    section#services div.transportes div.services h5 {
+        font-size: 100%;
+    }
+
+    section#services div.operador-logistico div.structure p {
+        font-size: 65%;
+    }
+    
+    section#services div.operador-logistico div.structure div.images img {
+        width: 45%;
+        border-radius: 5px;
+    }
+
+    section#services div.operador-logistico div.structure ul {
+        flex-direction: column;
+        align-items: center;
+        gap: .8rem;
+        padding: .8rem 0;
+    }
+    
+    section#services div.operador-logistico div.structure ul li span {
+        font-size: 65%;
+    }
+
+    section#services div.operador-logistico div.services div.container div.box {
+        width: 100%;
+        height: 150px;
+    }
+    
+    section#services div.operador-logistico div.services div.container div.box h5 {
+        font-size: 80%;
+    }
+    
+    section#services div.operador-logistico div.services div.container div.box p {
+        font-size: 65%;
+    }
+
+    section#services div.transportes div.fleet h5 {
+        font-size: 100%;
+    }
+
+    section#services div.transportes div.fleet ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    section#services div.transportes div.fleet ul li span {
+        font-size: 65%;
+    }
+
+    section#services div.transportes div.services div.container div.box {
+        width: 100%;
+        height: 150px;
+    }
+
+    section#services div.transportes div.services div.container div.box h5 {
+        font-size: 80%;
+    }
+    
+    section#services div.transportes div.services div.container div.box p {
+        font-size: 65%;
+    }
+
+    section#localization div.title h5 {
+        font-size: 120%;
+    }
+
+    section#localization div.infos {
+        display: none;
+    }
+
+    section#localization div.storages {
+        flex-direction: column;
+        gap: 1rem;
+        height: 100%;
+    }
+
+    section#localization div.storages div.storage-box {
+        width: 100%;
+    }
+
+    section#localization div.storages div.storage-box h5 {
+        font-size: 80%;
+    }
+
+    section#localization div.storages div.storage-box p {
+        font-size: 65%;
+    }
+
+    section#localization div.storages div.storage-box a {
+        font-size: 65%;
+        letter-spacing: .15rem;
+        padding: .325rem;
+    }
+
+    section#contact div.title h5 {
+        font-size: 120%;
+    }
+
+    section#contact div.container {
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        gap: 5rem;
+    }
+
+    section#contact div.infos {
+        width: 100%;
+        gap: 1rem;
+    }
+
+    section#contact div.infos h5 {
+        font-size: 100%;
+    }
+
+    section#contact div.infos a {
+        font-size: 65%;
+    }
+
+    section#contact div.content {
+        width: 100%;
+        padding-bottom: 1rem;
+    }
+
+    section#contact div.buttons {
+        width: 100%;
+    }
+
+    section#contact div.buttons button,
+    section#contact div.content form button,
+    footer div.footer form button {
+        font-size: 75%;
+    }
+
+    section#contact div.content form {
+        width: 100%;
+        gap: 1rem;
+        font-size: 85%;
+    }
+
+    section#contact div.content form input,
+    section#contact div.content form textarea,
+    footer div.footer form span input {
+        border: solid .5px #282828;
+        width: 100%;
+    }
+
+    footer div.footer {
+        flex-wrap: wrap;
+    }
+
+    footer div.footer div {
+        width: 100%;
+        margin-top: 2rem;
+        justify-content: center;
+    }
+
+    footer div.footer div:nth-child(4) {
+        margin-bottom: 2rem;
+    }
+
+    footer div.footer h5 {
+        font-size: 80%;
+    }
+    
+    footer div.footer a {
+        font-size: 65%;
+    }
+
+    footer div.footer i {
+        font-size: 1.5rem;
+    }
+
+    section#contact div.content form,
+    footer div.footer form {
+        width: 100%;
+        font-size: 85%;
+    }
+
+    footer div.copy {
+        justify-content: center;
+    }
+
+    footer div.copy div:nth-child(2) {
+        display: none;
+    }
+
+    footer div.copy a {
+        font-size: 57%;
+    }
+
+    div.whatsapp-fixed img {
+        width: 40px;
+        height: 40px;
+    }
+    
+    div.top-fixed img {
+        width: 40px;
+        height: 40px;
+        border-radius: 10%;
+    }
+
+    div.top-fixed {
+        display: none;
+        position: fixed;
+        z-index: 9999;
+        bottom: 45px;
+        right: 0;
+        padding: 1%;
+    }
+}
