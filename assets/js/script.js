@@ -70,6 +70,8 @@ $(function() {
       $(".dropdown-menu a").eq(2).text("Serviços");
       $(".dropdown-menu a").eq(3).text("Localização");
       $(".dropdown-menu a").eq(4).text("Contato");
+      $("section#banner div.buttons a").eq(0).text('Sobre a "Empresa"');
+      $("section#banner div.buttons a").eq(1).text("Solicite um orçamento");
       $(".en").removeClass("active");
       $(".es").removeClass("active");
       $(".br").addClass("active");
@@ -89,6 +91,8 @@ $(function() {
       $(".dropdown-menu a").eq(2).text("Services");
       $(".dropdown-menu a").eq(3).text("Localization");
       $(".dropdown-menu a").eq(4).text("Contact");
+      $("section#banner div.buttons a").eq(0).text('About The "Company"');
+      $("section#banner div.buttons a").eq(1).text("Request a Quote");
       $(".br").removeClass("active");
       $(".es").removeClass("active");
       $(".en").addClass("active");
@@ -108,6 +112,8 @@ $(function() {
       $(".dropdown-menu a").eq(2).text("Servicios");
       $(".dropdown-menu a").eq(3).text("Ubicación");
       $(".dropdown-menu a").eq(4).text("Contacto");
+      $("section#banner div.buttons a").eq(0).text('Sobre La "Empresa"');
+      $("section#banner div.buttons a").eq(1).text("Solicitar Presupuesto");
       $(".br").removeClass("active");
       $(".en").removeClass("active");
       $(".es").addClass("active");
