@@ -65,6 +65,11 @@ $(function() {
       $("header nav ul li a").eq(2).text("Serviços");
       $("header nav ul li a").eq(3).text("Localização");
       $("header nav ul li a").eq(4).text("Contato");
+      $(".dropdown-menu a").eq(0).text("Inicial");
+      $(".dropdown-menu a").eq(1).text('A "Empresa"');
+      $(".dropdown-menu a").eq(2).text("Serviços");
+      $(".dropdown-menu a").eq(3).text("Localização");
+      $(".dropdown-menu a").eq(4).text("Contato");
       $(".en").removeClass("active");
       $(".es").removeClass("active");
       $(".br").addClass("active");
@@ -79,6 +84,11 @@ $(function() {
       $("header nav ul li a").eq(2).text("Services");
       $("header nav ul li a").eq(3).text("Localization");
       $("header nav ul li a").eq(4).text("Contact");
+      $(".dropdown-menu a").eq(0).text("Initial");
+      $(".dropdown-menu a").eq(1).text('The "Company"');
+      $(".dropdown-menu a").eq(2).text("Services");
+      $(".dropdown-menu a").eq(3).text("Localization");
+      $(".dropdown-menu a").eq(4).text("Contact");
       $(".br").removeClass("active");
       $(".es").removeClass("active");
       $(".en").addClass("active");
@@ -93,6 +103,11 @@ $(function() {
       $("header nav ul li a").eq(2).text("Servicios");
       $("header nav ul li a").eq(3).text("Ubicación");
       $("header nav ul li a").eq(4).text("Contacto");
+      $(".dropdown-menu a").eq(0).text("Inicial");
+      $(".dropdown-menu a").eq(1).text('La "Empresa"');
+      $(".dropdown-menu a").eq(2).text("Servicios");
+      $(".dropdown-menu a").eq(3).text("Ubicación");
+      $(".dropdown-menu a").eq(4).text("Contacto");
       $(".br").removeClass("active");
       $(".en").removeClass("active");
       $(".es").addClass("active");
